@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-family: "Roboto", sans-serif;
+}
+body{
+  font-family: "Roboto", sans-serif;
+  
+}
+a{
+    text-decoration: none;
+}
+.container{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 3%;
+}
+.searchBar{
+  padding: 2%;
+  width: 100%;
+  margin:  0 auto;
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(0, 255, 255, 0.349);
+
+}
+.searchBar input{
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  background-color: #d628286c;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.searchBar input::placeholder{
+  color: #fff;
+  opacity: 0.54;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.searchBar button{
+  cursor: pointer;
+  border: 0 ;
+  outline: 0;
+  padding: 10px 25px;
+  background-color: rgba(180, 122, 34, 0.664);
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight:600;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  transition: 0.4s;
+}
+.searchBar button:hover{
+  background-color: #fff;
+  color: rgba(180, 122, 34, 0.986);
+}
+.meals{
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 5%;
+}
+.cardContainer{
+  text-align: center;
+  margin: 3%;
+  padding: 3%;
+}
+.card{
+  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding:10% 6%;
+  border-radius: 15px;
+  background-color: rgba(207, 49, 49, 0.534);
+  
+}
+.card img{
+  max-width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+
+}
+.card img:hover{
+  transform: scale(1.02);
+}
+.card h3{
+  margin: 4% 0;
+  text-transform: capitalize;
+  color: #ad1717;
+  font-size: 1.5rem;
+}
+.card p{
+  margin: 3% 0;
+  font-size: 1.2rem;
+}
+.card .recipe{
+  border: 0;
+  outline: 0;
+  max-width: 100%;
+  padding:10px 15px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 15px;
+  background-color: rgba(19, 180, 19, 0.568);
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin-top: 3%;
+  transition: 0.4s;
+  font-weight: 600;
+  cursor: pointer;
+}
+.card .recipe:hover{
+  background-color: #fff;
+  color: red;
+}
